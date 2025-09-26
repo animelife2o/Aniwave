@@ -1,0 +1,78 @@
+.div{
+    margin: none;
+    height: 57rem;
+    width: 79rem;
+    background-size: 100% 100%;
+    background: cover;
+    animation: slider 10s infinite;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes slider {
+    0% {background-image: url(https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg);}
+    25%{background-image: url(https://img.freepik.com/free-vector/gradient-tropical-sunset-background_52683-131844.jpg);}
+    50%{background-image: url(https://img.freepik.com/free-vector/gradient-tropical-sunset-background_52683-128662.jpg);}
+    75%{background-image: url(https://img.freepik.com/free-vector/gradient-summer-background-videocalls_23-2148961044.jpg);}
+    100%{background-image: url(https://img.freepik.com/premium-vector/sunset-panorama-beach_43605-106.jpg);}
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.div {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Reduced width */
+    text-align: center;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form .form-group label {
+    display: block;
+    font-size: 14px;
+    color: transparent;
+    margin-bottom: 5px;
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form .btn {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    color: #09080a;
+    background-color: #00ffdd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #b30000;
+}
