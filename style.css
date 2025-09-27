@@ -1,59 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
-    background-color: azure;
-    font-family: 'Robot', sans-serif;
+.card{
+    border: 1px solid black;
+    border-radius: 1px;
+    width: 10px;
+    height: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 3px;
+    display: grid;
+    gap: 5px;
+    
+    
 }
-#capturebackgound{
-    height: 220px;
-    width: 250px;
-    background-color: thistle;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.con:hover > :not(:hover){
+    opacity: 0.3;
 }
-#captchaHeading {
-    color: white;
+.card:hover{
+    transform: scale(1.1);
 }
-
-#captcha {
-    height: 80%;
-    width: 80%;
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin: auto;
-    display: block;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Post Section Styles */
+.post-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  justify-content: center; /* Center posts horizontally */
+  align-items: start; /* Align posts to the top */
 }
 
-#submitButton {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: #08e5ff;
-    border: 0px;
-    font-weight: bold;
-}
-
-#refreshButton {
-    background-color: #08e5ff;
-    border: 0px;
-    font-weight: bold;
-}
-
-#textBox {
-    height: 25px;
-}
-
-.incorrectCaptcha {
-    color: #FF0000;
-}
-
-.correctCaptcha {
-    color: #7FFF00;
+.post {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
 }
